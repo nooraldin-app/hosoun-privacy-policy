@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#124f40">
+  <meta name="description" content="سياسة الخصوصية لتطبيق حصون لتنظيم حفظ القرآن الكريم ومراجعته. تعرّف على البيانات المحلية والنسخ الاحتياطية والإشعارات وطرق حذف البيانات والتواصل مع المطور.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>سياسة الخصوصية | حصون</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --green: #124f40;
+      --green-deep: #0d3c30;
+      --green-soft: #eaf4ed;
+      --ink: #24362e;
+      --muted: #55695e;
+      --line: #dce8dd;
+      --page: #f7f7f1;
+      --card: #fffefa;
+      --gold: #d6b477;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--page); color: var(--ink); font-family: Tahoma, Arial, sans-serif; line-height: 1.95; }
+    a { color: #175e48; text-underline-offset: 3px; }
+    a:focus-visible, .jump:focus-visible { outline: 3px solid #bf8b2f; outline-offset: 4px; border-radius: 4px; }
+    .skip { position: absolute; right: 12px; top: -80px; padding: 8px 14px; background: white; z-index: 20; }
+    .skip:focus { top: 12px; }
+    .hero { background: linear-gradient(130deg, #103f33, #17644b); color: #fff; padding: 34px 20px 44px; }
+    .hero-inner { max-width: 920px; margin: auto; }
+    .brand { display: inline-flex; gap: 10px; align-items: center; margin-bottom: 22px; font-weight: 700; letter-spacing: .02em; }
+    .brand-icon { width: 40px; height: 40px; border: 1px solid #ffffff55; border-radius: 12px; display: grid; place-items: center; background: #ffffff12; }
+    .brand-icon svg { width: 25px; height: 25px; }
+    .eyebrow { color: #f0d59f; font-size: 13px; font-weight: 700; margin: 0 0 5px; }
+    h1 { font-size: clamp(27px, 5vw, 42px); line-height: 1.35; margin: 0 0 14px; }
+    .lead { margin: 0; max-width: 680px; font-size: 15px; color: #e8f2ec; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+    .tag { padding: 4px 11px; border: 1px solid #ffffff48; background: #ffffff12; border-radius: 999px; font-size: 12px; }
+    .shell { width: min(920px, calc(100% - 28px)); margin: -22px auto 42px; position: relative; }
+    .toc, .section, .note { border: 1px solid var(--line); border-radius: 18px; background: var(--card); box-shadow: 0 5px 24px #193d2b0b; }
+    .toc { padding: 22px 24px; }
+    .toc-title { margin: 0 0 12px; font-size: 16px; color: var(--green); }
+    .toc-links { display: flex; flex-wrap: wrap; gap: 8px; }
+    .jump { text-decoration: none; font-size: 12px; font-weight: bold; color: var(--green); background: var(--green-soft); border: 1px solid #cfe3d4; border-radius: 9px; padding: 5px 11px; }
+    main { margin-top: 16px; }
+    .section { padding: 24px 26px; margin-bottom: 14px; scroll-margin-top: 20px; }
+    .section h2 { margin: 0 0 12px; display: flex; align-items: baseline; gap: 11px; font-size: 19px; color: var(--green); line-height: 1.55; }
+    .num { flex: none; color: #8c6b32; font-size: 12px; background: #f7f0df; border-radius: 7px; padding: 3px 8px; }
+    p { margin: 9px 0; }
+    ul { margin: 9px 0 0; padding-inline-start: 25px; }
+    li { margin: 5px 0; }
+    strong { color: #163f30; }
+    .note { padding: 16px 20px; margin: 16px 0; background: #f6f1e5; border-color: #e7dac0; box-shadow: none; }
+    .note p { margin: 0; font-size: 13px; }
+    .meta { font-size: 13px; color: var(--muted); margin-top: 10px; }
+    .email { direction: ltr; unicode-bidi: isolate; display: inline-block; overflow-wrap: anywhere; font-weight: bold; }
+    footer { text-align: center; color: var(--muted); font-size: 12px; padding: 5px 12px 20px; }
+    footer p { margin: 4px 0; }
+    .version { font-size: 12px; color: #e3f0e9; opacity: .95; }
+    @media (max-width: 560px) {
+      .hero { padding: 25px 17px 43px; }
+      .shell { width: min(100% - 20px, 920px); }
+      .toc { padding: 19px 17px; }
+      .section { padding: 20px 17px; }
+      .section h2 { font-size: 17px; }
+    }
+    @media print {
+      .hero { color: #000; background: #fff; padding: 10px 0 20px; }
+      .eyebrow, .lead, .version { color: #222; }
+      .shell { margin: 0 auto; }
+      .toc { display: none; }
+      .section { box-shadow: none; break-inside: avoid; }
+      a { color: inherit; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main-content">الانتقال إلى نص السياسة</a>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="brand">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 3 27 7v8c0 7.1-4.6 11.8-11 14-6.4-2.2-11-6.9-11-14V7L16 3Z" stroke="#f7e5b4" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="m10.6 16.2 3.5 3.5 7.5-7.8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span>حصون <span class="version">| تطبيق حفظ القرآن ومراجعته</span></span>
+      </div>
+      <p class="eyebrow">الشفافية وحماية خصوصيتك</p>
+      <h1>سياسة الخصوصية</h1>
+      <p class="lead">توضح هذه السياسة كيفية تعامل تطبيق «حصون» مع خطط حفظ القرآن الكريم والمحفوظات وسجلات الإنجاز وإعدادات الإشعارات والنسخ الاحتياطية.</p>
+      <div class="tags" aria-label="خصائص التطبيق">
+        <span class="tag">البيانات الأساسية على الجهاز</span>
+        <span class="tag">لا يلزم إنشاء حساب</span>
+        <span class="tag">تصدير يدوي للنسخ</span>
+      </div>
+      <p class="version" style="margin-top:17px">آخر تحديث: <time datetime="2026-10-09">9 أكتوبر 2026</time></p>
+    </div>
+  </header>
+
+  <div class="shell">
+    <nav class="toc" aria-label="أقسام سياسة الخصوصية">
+      <h2 class="toc-title">الانتقال إلى قسم</h2>
+      <div class="toc-links">
+        <a class="jump" href="#about">التطبيق والمطور</a>
+        <a class="jump" href="#data">البيانات</a>
+        <a class="jump" href="#sharing">المشاركة</a>
+        <a class="jump" href="#permissions">صلاحيات Android</a>
+        <a class="jump" href="#backup">النسخ الاحتياطي</a>
+        <a class="jump" href="#deletion">حذف البيانات</a>
+        <a class="jump" href="#contact">التواصل</a>
+      </div>
+    </nav>
+
+    <main id="main-content">
+      <section class="section" id="about" aria-labelledby="h-about">
+        <h2 id="h-about"><span class="num">01</span> عن التطبيق والجهة المسؤولة</h2>
+        <p>«حصون» تطبيق يساعد المستخدم على تنظيم حفظ القرآن الكريم ومراجعته، وإنشاء خطط أسبوعية وبرامج يومية، وتسجيل المحفوظات والإنجازات، وعرض التقارير والتذكيرات والتطبيقات المصغّرة (Widgets).</p>
+        <p><strong>اسم التطبيق:</strong> حصون (<span dir="ltr">Hosoun</span>).</p>
+        <p><strong>معرّف تطبيق Android:</strong> <span dir="ltr">com.nooraldin.hosoun</span>.</p>
+        <p><strong>المطوّر:</strong> <span dir="ltr">NOOR ALDIN ALNASSAR</span>.</p>
+        <p>لا يتطلب التطبيق في وظائفه الحالية تسجيل حساب لدى المطور أو إدخال بريد إلكتروني لاستخدام خطط الحفظ.</p>
+      </section>
+
+      <section class="section" id="data" aria-labelledby="h-data">
+        <h2 id="h-data"><span class="num">02</span> ما البيانات التي يعالجها «حصون»؟</h2>
+        <p>يحتفظ التطبيق محليًا بالمعلومات اللازمة لتقديم وظائفه، بما في ذلك:</p>
+        <ul>
+          <li>اسم خطة الحفظ وتاريخ بدايتها وأيام الحفظ ومقادير الحفظ والمراجعة وإعدادات الحصون.</li>
+          <li>المحفوظات التي يسجلها المستخدم، وسجلات إنجاز المهام والتقدم والتقارير الأسبوعية.</li>
+          <li>أوقات التذكير ونصوص الإشعارات التي يختارها المستخدم، وحالة تفعيلها.</li>
+          <li>أسماء وحزم تطبيقات القرآن التي يختار المستخدم ربطها بالتطبيق، والتسميات المحلية الاختيارية لها.</li>
+          <li>الإعدادات التقنية اللازمة لإظهار محتوى التطبيقين المصغّرين وإدارة التنبيهات على جهاز Android.</li>
+        </ul>
+        <p>تُستخدم هذه البيانات لإعداد خطة الحفظ، وعرض تقدم المستخدم، وتشغيل التذكيرات، وفتح التطبيقات المرتبطة، وإتاحة النسخ الاحتياطي والاستعادة.</p>
+        <p>بحسب الوظائف الحالية للتطبيق، تُحفظ سجلات الخطط والمحفوظات أساسًا داخل تخزين التطبيق على الجهاز، ولا يوجد نظام حسابات أو مزامنة لهذه السجلات مع خادم تابع للمطور.</p>
+      </section>
+
+      <section class="section" id="sharing" aria-labelledby="h-sharing">
+        <h2 id="h-sharing"><span class="num">03</span> نقل البيانات ومشاركتها</h2>
+        <p>لا تتضمن وظائف التطبيق الأساسية إرسال بيانات الحفظ والمراجعة تلقائيًا إلى خوادم المطور، ولا يشتمل كود الواجهة الحالي على إعلانات أو أدوات تحليلات أو تتبع للمستخدمين.</p>
+        <p>قد تُنقل بعض المعلومات إلى خدمات أخرى <strong>بمبادرة منك أو بحسب إعدادات جهازك</strong>، في الحالات التالية:</p>
+        <ul>
+          <li>عند تصدير نسخة احتياطية أو مشاركتها أو حفظها في خدمة تخزين تختارها.</li>
+          <li>عند تفعيل خدمة النسخ الاحتياطي الخاصة بنظام Android أو Google أو الشركة المصنّعة للجهاز.</li>
+          <li>عند فتح روابط أو تطبيقات خارجية، إذ تنطبق شروط الخصوصية الخاصة بتلك الجهات.</li>
+          <li>عند مراسلة المطور، حيث يتلقى عنوان البريد الإلكتروني ومحتوى الرسالة وأي مرفقات ترسلها بنفسك.</li>
+        </ul>
+        <p>لا يبيع المطور سجلات الحفظ أو المعلومات التي يقدمها المستخدم لأي جهة إعلانية.</p>
+      </section>
+
+      <section class="section" id="permissions" aria-labelledby="h-permissions">
+        <h2 id="h-permissions"><span class="num">04</span> صلاحيات الهاتف والإشعارات</h2>
+        <p>قد تتطلب وظائف «حصون» الصلاحيات أو ميزات النظام التالية:</p>
+        <ul>
+          <li><strong>الإشعارات:</strong> لعرض التذكيرات اليومية بعد منح إذن الإشعارات حيث يشترطه Android.</li>
+          <li><strong>إشعارات النظام عند بدء التشغيل أو تغيير الوقت:</strong> للمساعدة على إعادة جدولة التذكيرات وتحديث محتوى التطبيقات المصغّرة.</li>
+          <li><strong>إمكانية الاتصال بالإنترنت:</strong> مصرح بها في إعدادات Android، لكنها ليست شرطًا لاستخدام الوظائف الأساسية لتسجيل الحفظ والمراجعة في النسخة الحالية.</li>
+          <li><strong>اختيار تطبيق آخر لفتحه:</strong> لإتاحة ربط تطبيق قرآن موجود على الهاتف وفتحه باختيار المستخدم.</li>
+        </ul>
+        <p>لا يحتاج استخدام الوظائف الأساسية للتطبيق إلى منح صلاحية الموقع الجغرافي أو الكاميرا أو الميكروفون أو جهات الاتصال.</p>
+      </section>
+
+      <section class="section" id="backup" aria-labelledby="h-backup">
+        <h2 id="h-backup"><span class="num">05</span> النسخ الاحتياطي والاستعادة</h2>
+        <p>عند اختيار «تصدير نسخة احتياطية»، ينشئ التطبيق ملفًا يتضمن بيانات الخطة والمحفوظات وسجل الإنجاز والإعدادات. تختار بنفسك موضع حفظ الملف أو تطبيق مشاركته. يمكن استيراد الملف لاحقًا لاستعادة بيانات التطبيق.</p>
+        <p>كذلك تسمح إعدادات إصدار Android الحالي بالنسخ الاحتياطي على مستوى النظام (<span dir="ltr">Android Auto Backup</span>) وفق إعدادات الجهاز وخدماته وسياسات مقدم الخدمة. قد يؤدي ذلك إلى الاحتفاظ بنسخة خارج التخزين المحلي المباشر للتطبيق.</p>
+        <p>ينبغي التعامل مع ملفات النسخ الاحتياطية باعتبارها تحتوي على سجل الحفظ الشخصي. لا يضع التطبيق كلمة مرور مستقلة على ملف JSON المصدّر، لذلك يُنصح بحفظه في مكان آمن وعدم مشاركته إلا مع جهة موثوقة.</p>
+      </section>
+
+      <section class="section" id="security" aria-labelledby="h-security">
+        <h2 id="h-security"><span class="num">06</span> أمان البيانات ومدة الاحتفاظ</h2>
+        <p>تعتمد حماية البيانات المحلية على وسائل العزل والحماية التي يوفرها جهاز Android. تُحفظ البيانات داخل مساحة التطبيق إلى أن تُحذف أو تُمسح بيانات التطبيق، أو تُستعاد نسخة أخرى لتحل محلها. ولا يقدم التطبيق ادعاءً بأن سجلاته المحلية أو ملفات JSON المصدّرة مشفرة بتشفير مستقل خاص بالتطبيق.</p>
+        <p>قد تحتفظ خدمة النسخ الاحتياطي التي يفعّلها المستخدم بنسخ لفترات تحددها تلك الخدمة. أما رسائل الدعم التي ترسلها طوعًا فقد يُحتفظ بها للرد على طلبك ومتابعته، ويمكنك طلب حذفها عبر بريد الدعم.</p>
+      </section>
+
+      <section class="section" id="deletion" aria-labelledby="h-deletion">
+        <h2 id="h-deletion"><span class="num">07</span> كيف تحذف بياناتك؟</h2>
+        <p>يمكنك من إعدادات «حصون» استخدام خيار «حذف جميع البيانات» لإزالة الخطة والسجلات الرئيسية داخل التطبيق. لكن هذا الإجراء لا يحذف الملفات التي صدّرتها إلى مواقع أخرى، وقد تبقى بيانات تقنية مساعدة أو نسخ احتياطية خارجة عن نطاق زر الحذف.</p>
+        <p><strong>لمسح بيانات التطبيق المحلية بالكامل من الهاتف:</strong> افتح «إعدادات Android ← التطبيقات ← حصون ← التخزين ← مسح البيانات» (قد تختلف أسماء القوائم حسب نوع الهاتف). يؤدي ذلك إلى إزالة بيانات التطبيق المخزنة محليًا، بما فيها إعداداته.</p>
+        <p>إذا سبق أن حفظت نسخة احتياطية في ملفات الهاتف أو في Google Drive أو أي خدمة أخرى، فاحذفها من موضعها بشكل مستقل. وقد تحتاج أيضًا إلى إدارة النسخ الاحتياطية التي ينشئها نظام Android، بحسب إعدادات الجهاز وخدمة النسخ المستخدمة.</p>
+        <div class="note"><p><strong>مهم:</strong> يتيح «حصون» العمل دون إنشاء حساب لدى المطور؛ لذلك لا توجد عضوية مستخدم على خادم خاص بالتطبيق تحتاج إلى طلب إلغاء حساب.</p></div>
+      </section>
+
+      <section class="section" id="external" aria-labelledby="h-external">
+        <h2 id="h-external"><span class="num">08</span> التطبيقات والروابط الخارجية</h2>
+        <p>قد يتيح «حصون» فتح تطبيق قرآن تختاره بنفسك، أو عرض روابط لمصادر معلومات قرآنية مثل <a href="https://tanzil.net/docs/Quran_Metadata" target="_blank" rel="noopener noreferrer">Tanzil</a>. عند مغادرة «حصون» تنطبق سياسات الخصوصية الخاصة بالتطبيق أو الموقع الخارجي.</p>
+        <p>تُستضاف صفحة سياسة الخصوصية هذه على موقع ويب مستقل؛ وقد يعالج مقدم خدمة استضافة الصفحة بيانات الاتصال التقنية المعتادة عند زيارتها وفق سياسته. ولا تحتوي الصفحة نفسها على شيفرات تحليلات أو إعلانات أو ملفات تعريف ارتباط يضعها المطور.</p>
+      </section>
+
+      <section class="section" id="changes" aria-labelledby="h-changes">
+        <h2 id="h-changes"><span class="num">09</span> تحديث سياسة الخصوصية</h2>
+        <p>قد تُحدَّث هذه السياسة عند إضافة وظائف جديدة أو تغيير آلية تخزين البيانات أو مشاركتها أو تغيّر المتطلبات القانونية. سيظهر تاريخ آخر تحديث في أعلى الصفحة. يجب أن تعكس النسخة المنشورة من السياسة السلوك الفعلي للإصدار المتاح للمستخدمين.</p>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="h-contact">
+        <h2 id="h-contact"><span class="num">10</span> التواصل وطلبات الخصوصية</h2>
+        <p>للاستفسارات بشأن سياسة الخصوصية، أو لطلب معلومات عن بيانات الدعم التي أرسلتها طوعًا أو طلب حذفها، يمكنك التواصل مع مطور «حصون»:</p>
+        <p><strong>المطور:</strong> <span dir="ltr">NOOR ALDIN ALNASSAR</span></p>
+        <p><strong>البريد الإلكتروني:</strong> <a class="email" href="mailto:hosounapp@gmail.com?subject=Hosoun%20Privacy%20Inquiry">hosounapp@gmail.com</a></p>
+        <p class="meta">تاريخ سريان هذه النسخة: <time datetime="2026-10-09">9 أكتوبر 2026</time>.</p>
+      </section>
+    </main>
+    <footer>
+      <p>© 2026 حصون — <span dir="ltr">NOOR ALDIN ALNASSAR</span></p>
+      <p>هذه الصفحة مخصصة لسياسة خصوصية تطبيق «حصون» فقط.</p>
+    </footer>
+  </div>
+</body>
+</html>
